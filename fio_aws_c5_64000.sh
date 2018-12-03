@@ -1,33 +1,57 @@
-./fio_single_test.sh	B_single_vbs	1	randwrite	0	16K	64	180
-./fio_single_test.sh	B_single_vbs	2	randread	0	16K	64	180
-./fio_single_test.sh	B_single_vbs	3	randwrite	0	16K	32	180
-./fio_single_test.sh	B_single_vbs	4	randread	0	16K	32	180
-./fio_single_test.sh	B_single_vbs	5	randwrite	0	16K	28	180
-./fio_single_test.sh	B_single_vbs	6	randread	0	16K	28	180
-./fio_single_test.sh	B_single_vbs	7	randwrite	0	16K	24	180
-./fio_single_test.sh	B_single_vbs	8	randread	0	16K	24	180
-./fio_single_test.sh	B_single_vbs	9	randwrite	0	16K	20	180
-./fio_single_test.sh	B_single_vbs	10	randread	0	16K	20	180
-./fio_single_test.sh	B_single_vbs	11	randwrite	0	16K	16	180
-./fio_single_test.sh	B_single_vbs	12	randread	0	16K	16	180
-./fio_single_test.sh	B_single_vbs	13	randwrite	0	16K	8	180
-./fio_single_test.sh	B_single_vbs	14	randread	0	16K	8	180
-./fio_single_test.sh	B_single_vbs	15	randwrite	0	16K	1	180
-./fio_single_test.sh	B_single_vbs	16	randread	0	16K	1	180
-							
-./fio_single_test.sh	B_single_vbs	17	randwrite	0	4K	64	180
-./fio_single_test.sh	B_single_vbs	18	randread	0	4K	64	180
-./fio_single_test.sh	B_single_vbs	19	randwrite	0	4K	32	180
-./fio_single_test.sh	B_single_vbs	20	randread	0	4K	32	180
-./fio_single_test.sh	B_single_vbs	21	randwrite	0	4K	28	180
-./fio_single_test.sh	B_single_vbs	22	randread	0	4K	28	180
-./fio_single_test.sh	B_single_vbs	23	randwrite	0	4K	24	180
-./fio_single_test.sh	B_single_vbs	24	randread	0	4K	24	180
-./fio_single_test.sh	B_single_vbs	25	randwrite	0	4K	20	180
-./fio_single_test.sh	B_single_vbs	26	randread	0	4K	20	180
-./fio_single_test.sh	B_single_vbs	27	randwrite	0	4K	16	180
-./fio_single_test.sh	B_single_vbs	28	randread	0	4K	16	180
-./fio_single_test.sh	B_single_vbs	29	randwrite	0	4K	8	180
-./fio_single_test.sh	B_single_vbs	30	randread	0	4K	8	180
-./fio_single_test.sh	B_single_vbs	31	randwrite	0	4K	1	180
-./fio_single_test.sh	B_single_vbs	32	randread	0	4K	1	180
+./fio	single	test.sh	B	single	vbs	1	randwrite	0	16K	36	180
+./fio	single	test.sh	B	single	vbs	2	randread	0	16K	36	180
+./fio	single	test.sh	B	single	vbs	3	randwrite	0	16K	34	180
+./fio	single	test.sh	B	single	vbs	4	randread	0	16K	34	180
+./fio	single	test.sh	B	single	vbs	5	randwrite	0	16K	32	180
+./fio	single	test.sh	B	single	vbs	6	randread	0	16K	32	180
+./fio	single	test.sh	B	single	vbs	7	randwrite	0	16K	30	180
+./fio	single	test.sh	B	single	vbs	8	randread	0	16K	30	180
+./fio	single	test.sh	B	single	vbs	9	randwrite	0	16K	28	180
+./fio	single	test.sh	B	single	vbs	10	randread	0	16K	28	180
+./fio	single	test.sh	B	single	vbs	11	randwrite	0	16K	26	180
+./fio	single	test.sh	B	single	vbs	12	randread	0	16K	26	180
+./fio	single	test.sh	B	single	vbs	13	randwrite	0	16K	24	180
+./fio	single	test.sh	B	single	vbs	14	randread	0	16K	24	180
+./fio	single	test.sh	B	single	vbs	15	randwrite	0	16K	22	180
+./fio	single	test.sh	B	single	vbs	16	randread	0	16K	22	180
+./fio	single	test.sh	B	single	vbs	17	randwrite	0	16K	20	180
+./fio	single	test.sh	B	single	vbs	18	randread	0	16K	20	180
+./fio	single	test.sh	B	single	vbs	19	randwrite	0	16K	18	180
+./fio	single	test.sh	B	single	vbs	20	randread	0	16K	18	180
+./fio	single	test.sh	B	single	vbs	21	randwrite	0	16K	16	180
+./fio	single	test.sh	B	single	vbs	22	randread	0	16K	16	180
+./fio	single	test.sh	B	single	vbs	23	randwrite	0	16K	12	180
+./fio	single	test.sh	B	single	vbs	24	randread	0	16K	12	180
+./fio	single	test.sh	B	single	vbs	25	randwrite	0	16K	8	180
+./fio	single	test.sh	B	single	vbs	26	randread	0	16K	8	180
+./fio	single	test.sh	B	single	vbs	27	randwrite	0	16K	4	180
+./fio	single	test.sh	B	single	vbs	28	randread	0	16K	4	180
+./fio	single	test.sh	B	single	vbs	29	randwrite	0	16K	1	180
+./fio	single	test.sh	B	single	vbs	30	randread	0	16K	1	180
+											
+./fio	single	test.sh	B	single	vbs	31	randwrite	0	4K	32	180
+./fio	single	test.sh	B	single	vbs	32	randread	0	4K	32	180
+./fio	single	test.sh	B	single	vbs	33	randwrite	0	4K	30	180
+./fio	single	test.sh	B	single	vbs	34	randread	0	4K	30	180
+./fio	single	test.sh	B	single	vbs	35	randwrite	0	4K	28	180
+./fio	single	test.sh	B	single	vbs	36	randread	0	4K	28	180
+./fio	single	test.sh	B	single	vbs	37	randwrite	0	4K	26	180
+./fio	single	test.sh	B	single	vbs	38	randread	0	4K	26	180
+./fio	single	test.sh	B	single	vbs	39	randwrite	0	4K	24	180
+./fio	single	test.sh	B	single	vbs	40	randread	0	4K	24	180
+./fio	single	test.sh	B	single	vbs	41	randwrite	0	4K	22	180
+./fio	single	test.sh	B	single	vbs	42	randread	0	4K	22	180
+./fio	single	test.sh	B	single	vbs	43	randwrite	0	4K	20	180
+./fio	single	test.sh	B	single	vbs	44	randread	0	4K	20	180
+./fio	single	test.sh	B	single	vbs	45	randwrite	0	4K	18	180
+./fio	single	test.sh	B	single	vbs	46	randread	0	4K	18	180
+./fio	single	test.sh	B	single	vbs	47	randwrite	0	4K	16	180
+./fio	single	test.sh	B	single	vbs	48	randread	0	4K	16	180
+./fio	single	test.sh	B	single	vbs	49	randwrite	0	4K	12	180
+./fio	single	test.sh	B	single	vbs	50	randread	0	4K	12	180
+./fio	single	test.sh	B	single	vbs	51	randwrite	0	4K	8	180
+./fio	single	test.sh	B	single	vbs	52	randread	0	4K	8	180
+./fio	single	test.sh	B	single	vbs	53	randwrite	0	4K	4	180
+./fio	single	test.sh	B	single	vbs	54	randread	0	4K	4	180
+./fio	single	test.sh	B	single	vbs	55	randwrite	0	4K	1	180
+./fio	single	test.sh	B	single	vbs	56	randread	0	4K	1	180
