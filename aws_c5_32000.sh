@@ -1,7 +1,3 @@
-./fio_single_test.sh	B_single_vbs	5	randwrite	0	16K	32	180
-./fio_single_test.sh	B_single_vbs	6	randread	0	16K	32	180
-./fio_single_test.sh	B_single_vbs	7	randwrite	0	16K	30	180
-./fio_single_test.sh	B_single_vbs	8	randread	0	16K	30	180
 ./fio_single_test.sh	B_single_vbs	9	randwrite	0	16K	28	180
 ./fio_single_test.sh	B_single_vbs	10	randread	0	16K	28	180
 ./fio_single_test.sh	B_single_vbs	11	randwrite	0	16K	26	180
@@ -29,14 +25,6 @@
 ./fio_single_test.sh	B_single_vbs	29	randwrite	0	16K	1	180
 ./fio_single_test.sh	B_single_vbs	30	randread	0	16K	1	180
 							            	
-./fio_single_test.sh	B_single_vbs	31	randwrite	0	4K	32	180
-./fio_single_test.sh	B_single_vbs	32	randread	0	4K	32	180
-./fio_single_test.sh	B_single_vbs	33	randwrite	0	4K	30	180
-./fio_single_test.sh	B_single_vbs	34	randread	0	4K	30	180
-./fio_single_test.sh	B_single_vbs	35	randwrite	0	4K	28	180
-./fio_single_test.sh	B_single_vbs	36	randread	0	4K	28	180
-./fio_single_test.sh	B_single_vbs	37	randwrite	0	4K	26	180
-./fio_single_test.sh	B_single_vbs	38	randread	0	4K	26	180
 ./fio_single_test.sh	B_single_vbs	39	randwrite	0	4K	24	180
 ./fio_single_test.sh	B_single_vbs	40	randread	0	4K	24	180
 ./fio_single_test.sh	B_single_vbs	41	randwrite	0	4K	22	180
