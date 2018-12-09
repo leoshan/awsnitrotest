@@ -14,7 +14,7 @@ function RunFio
  cpulist=""
  for ((i=1;i<10;i++))
  do
-     list=`cat /sys/block/vdb/mq/*/cpu_list | awk '{if(i<=NF) print $i;}' i="$i" | tr -d ',' | tr '\n' ','`
+     list=`cat /sys/block/nvme1n1/mq/*/cpu_list | awk '{if(i<=NF) print $i;}' i="$i" | tr -d ',' | tr '\n' ','`
      if [ -z $list ];then
          break
      fi
@@ -24,6 +24,6 @@ function RunFio
  echo $spincpu
  fio --ioengine=libaio --runtime=30s --numjobs=${numjobs} --iodepth=${iodepth} --bs=${bs} --rw=${rw} --filename=${filename} --time_based=1 --direct=1 --name=test --group_reporting --cpus_allowed=$spincpu --cpus_allowed_policy=split
 }
-echo 2 > /sys/block/vdb/queue/rq_affinity
+echo 2 > /sys/block/nvme1n1/queue/rq_affinity
 sleep 5
-RunFio 8 64 '4k' 'randwrite' '/dev/nvme1n1'
+RunFio 2 1 '4k' 'randwrite' '/dev/nvme1n1'
