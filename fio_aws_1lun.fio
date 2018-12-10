@@ -7,9 +7,9 @@ iodepth=iodepxxx
 direct=1
 time_based
 runtime=runtimexxx
-numjobs=1
+numjobs=numjobsxxx
 group_reporting
 thread
 
 [job1]
-filename=/dev/sdc
+filename=/dev/vdb
