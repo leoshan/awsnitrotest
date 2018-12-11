@@ -58,7 +58,7 @@ case $sight in
 	cp fio_vm_10.fio fio_work.fio
         ;;
  *)
-        echo "Usage: $name [A/B/C/D_single_queue/single_lun/single_vbs rwtype blocksize iodep runtime]"
+        echo "Usage: $name [A/B/C/D_single_queue/single_lun/single_vbs rwtype blocksize iodep runtime numjobs]"
         exit 1
         ;;
 esac
@@ -68,6 +68,7 @@ sed -i "s/bs=bsxxx/bs=$bs/g" fio_work.fio
 sed -i "s/iodepth=iodepxxx/iodepth=$iodep/g" fio_work.fio
 sed -i "s/runtime=runtimexxx/runtime=$runtime/g" fio_work.fio
 sed -i "s/rwmixread=rwmixreadxxx/rwmixread=$rwmixread/g" fio_work.fio
+sed -i "s/numjobs=numjobsxxx/numjobs=$numjobs/g" fio_work.fio
 
 rm -rf fio_res_${index}_${sight}_${rwtype}_${bs}_${rwmixread}_${iodep}_${runtime}_${numjobs}
 fio fio_work.fio | tee fio_res_${index}_${sight}_${rwtype}_${bs}_${rwmixread}_${iodep}_${runtime}_${numjobs}
