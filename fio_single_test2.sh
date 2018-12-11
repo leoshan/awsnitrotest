@@ -7,7 +7,7 @@ rwmixread=$4
 bs=$5
 iodep=$6
 runtime=$7
-nunjobs=$8
+numjobs=$8
 case $sight in
  A_single_queue)
         echo "A_single_queue" $index
@@ -69,5 +69,5 @@ sed -i "s/iodepth=iodepxxx/iodepth=$iodep/g" fio_work.fio
 sed -i "s/runtime=runtimexxx/runtime=$runtime/g" fio_work.fio
 sed -i "s/rwmixread=rwmixreadxxx/rwmixread=$rwmixread/g" fio_work.fio
 
-rm -rf fio_res_${index}_${sight}_${rwtype}_${bs}_${rwmixread}_${iodep}_${runtime}_${nunjobs}
-fio fio_work.fio | tee fio_res_${index}_${sight}_${rwtype}_${bs}_${rwmixread}_${iodep}_${runtime}_${nunjobs}
+rm -rf fio_res_${index}_${sight}_${rwtype}_${bs}_${rwmixread}_${iodep}_${runtime}_${numjobs}
+fio fio_work.fio | tee fio_res_${index}_${sight}_${rwtype}_${bs}_${rwmixread}_${iodep}_${runtime}_${numjobs}
