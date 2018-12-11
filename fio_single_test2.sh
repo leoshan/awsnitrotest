@@ -9,17 +9,21 @@ iodep=$6
 runtime=$7
 numjobs=$8
 case $sight in
- A_single_queue)
-        echo "A_single_queue" $index
-	cp fio_uvp_100.fio fio_work.fio
+ aws_single_lun)
+        echo "aws_single_lun" $index
+	cp fio_aws_1lun.fio fio_work.fio
         ;;
- A_single_lun)
-        echo "A_single_lun" $index
-	cp fio_uvp_100.fio fio_work.fio
+ aws_multi_luns)
+        echo "aws_multi_luns" $index
+	cp fio_aws_luns.fio fio_work.fio
         ;;
- A_single_vbs)
-        echo "A_single_vbs" $index
-	cp fio_uvp_10.fio fio_work.fio
+ ali_single_lun)
+        echo "ali_single_lun" $index
+	cp fio_aws_1lun.fio fio_work.fio
+        ;;
+ ali_multi_luns)
+        echo "ali_multi_luns" $index
+	cp fio_aws_luns.fio fio_work.fio
         ;;
  B_single_queue)
         echo "B_single_queue" $index
@@ -33,32 +37,8 @@ case $sight in
         echo "B_single_vbs" $index
 	cp fio_aws_4lun.fio fio_work.fio
         ;;
- C_single_queue)
-        echo "C_single_queue" $index
-	cp fio_vm_100.fio fio_work.fio
-        ;;
- C_single_lun)
-        echo "C_single_lun" $index
-	cp fio_vm_100.fio fio_work.fio
-        ;;
- C_single_vbs)
-        echo "C_single_vbs" $index
-	cp fio_vm_10.fio fio_work.fio
-        ;;
- D_single_queue)
-        echo "D_single_queue" $index
-	cp fio_vm_100.fio fio_work.fio
-        ;;
- D_single_lun)
-        echo "D_single_lun" $index
-	cp fio_vm_100.fio fio_work.fio
-        ;;
- D_single_vbs)
-        echo "D_single_vbs" $index
-	cp fio_vm_10.fio fio_work.fio
-        ;;
  *)
-        echo "Usage: $name [A/B/C/D_single_queue/single_lun/single_vbs rwtype blocksize iodep runtime numjobs]"
+        echo "Usage: $name [aws/ali/B_single_lun/multi_luns rwtype blocksize iodep runtime numjobs]"
         exit 1
         ;;
 esac
